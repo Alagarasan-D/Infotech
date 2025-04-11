@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+
+</head>
+
+<body>
+
+    <!--div for none the page-->
+    <div id="ARD">
+        <marquee>
+            <h1><abbr title="Alagarasan,Raja,DineshKumar->Infotech">ARD INFOTECH</abbr></h1>
+        </marquee>
+
+        <div class="div1">
+            <div class="div2" id="div2"></div>
+            <!-- <div class="div3" id="div3"></div> -->
+            <button id="btn">let's start</button>
+        </div>
+        <li><a href=""></a>
+        </li>
+    </div>
+
+    <!--div for guess-->
+    <div id="nonefirst">
+        <!--div for change child div-->
+        <div id="noneforwin">
+            <!--div guessnumber,input,button,etc-->
+            <div>
+                <!--h1 for guessnumber text-->
+                <h1>Guess The Number 0 to 10</h1>
+                <h2 id="int">X</h2>
+                <!--input for user enter the number-->
+                <input id="user enter number">
+                <!--button for hint-->
+                <button onclick="hint()">
+                    !
+                </button>
+                <!--button for check the input number-->
+                <button onclick="check()">
+                    Check
+                </button>
+                <!--h2 for tell wrong or wright-->
+                <h2 id="wrong or right"></h2>
+                <!--h2 for show score-->
+                <h2 id="score">
+                    Your Score Is Now 10
+                </h2>
+            </div>
+        </div>
+
+        <!--div for disply again play if the guess number is correct-->
+        <div id="win" style="display:none">
+            <!--h2 for disply You are win-->
+            <h2>WOW YOU ARE WIN</h2>
+            <!--h2 for display score-->
+            <h2 id="winscore"></h2>
+            <!--button for again play-->
+            <button onclick="again()">
+                Again Play
+            </button>
+        </div>
+
+        <!--div for hint-->
+        <div id="hintforuser" style="display: none;">
+            <!--span for display the hint-->
+            <span id="span1" style="position:relative ;"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+
+            <!--hint remove button-->
+            <button onclick="cancelhint()">
+                Cancel
+            </button>
+        </div>
+    </div>
+    <!--div for opacity-->
+    <div id="opacitydiv"></div>
+
+</body>
+
+</html>
+<script src="first.js"></script>
